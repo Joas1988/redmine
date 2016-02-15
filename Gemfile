@@ -12,7 +12,7 @@ gem "request_store", "1.0.5"
 gem "mime-types"
 gem "protected_attributes"
 gem "actionpack-action_caching"
-gem "actionpack-xml_parser"
+gem "actionpack-xml_parser", :git => 'https://github.com/rails/actionpack-xml_parser.git', :branch => 'master'
 #gem "roadie-rails" not ready for rails5
 
 # Request at least nokogiri 1.6.7.2 because of security advisories
