@@ -4,8 +4,8 @@ if Gem::Version.new(Bundler::VERSION) < Gem::Version.new('1.5.0')
   abort "Redmine requires Bundler 1.5.0 or higher (you're using #{Bundler::VERSION}).\nPlease update with 'gem update bundler'."
 end
 
-gem 'rails', '~> 5.0', '>= 5.0.0.beta2'
-gem "jquery-rails", "~> 3.1.4"
+gem 'rails', '>= 5.0.0.beta2'
+#gem "jquery-rails", "~> 3.1.4" not ready for rails5
 gem "coderay", "~> 1.1.0"
 gem "builder", ">= 3.0.4"
 gem "request_store", "1.0.5"
@@ -13,12 +13,12 @@ gem "mime-types"
 gem "protected_attributes"
 gem "actionpack-action_caching"
 gem "actionpack-xml_parser"
-gem "roadie-rails"
+#gem "roadie-rails" not ready for rails5
 
 # Request at least nokogiri 1.6.7.2 because of security advisories
 gem "nokogiri", ">= 1.6.7.2"
 
-# Request at least rails-html-sanitizer 1.0.3 because of security advisories 
+# Request at least rails-html-sanitizer 1.0.3 because of security advisories
 gem "rails-html-sanitizer", ">= 1.0.3"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

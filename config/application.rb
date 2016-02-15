@@ -52,7 +52,7 @@ module RedmineApp
 
     # XML parameter parser removed from core in Rails 4.0
     # and extracted to actionpack-xml_parser gem
-    config.middleware.insert_after ActionDispatch::ParamsParser, ActionDispatch::XmlParamsParser
+    # config.middleware.insert_after ActionDispatch::ParamsParser, ActionDispatch::XmlParamsParser -- middleware removed
 
     # Sets the Content-Length header on responses with fixed-length bodies
     config.middleware.use Rack::ContentLength
